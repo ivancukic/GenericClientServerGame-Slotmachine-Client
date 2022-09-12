@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="850.0" style="-fx-background-color: gray;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUILogin.FXMLDocumentController">
+    <stylesheets>
+        <URL value="@/CSS/stylesheet.css" />
+    </stylesheets>
+   <children>
+      <Text layoutX="158.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plese Enter Your Username And Password">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="username" layoutX="158.0" layoutY="235.0" />
+      <Text layoutX="158.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <PasswordField fx:id="password" layoutX="158.0" layoutY="315.0" />
+      <Text layoutX="158.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Text fill="#9e0e0e" layoutX="158.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New User? Please" />
+      <Button fx:id="createDC" layoutX="261.0" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#initialize" text="Sign Up!" />
+      <Button fx:id="login" layoutX="159.0" layoutY="386.0" mnemonicParsing="false" text="Login" />
+      <Button fx:id="allUsers" layoutX="496.0" layoutY="315.0" mnemonicParsing="false" text="Users" />
+      <Text layoutX="496.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="See all users:" />
+   </children>
+</AnchorPane>

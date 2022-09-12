@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="850.0" style="-fx-background-color: gray;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUISignup.FXMLDocumentController">
+    <stylesheets>
+        <URL value="@/CSS/stylesheet.css" />
+    </stylesheets>
+   <children>
+      <Text layoutX="121.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter What Username And Password You Wan't:">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="121.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
+      <Text layoutX="121.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Text layoutX="121.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <TextField fx:id="username" layoutX="121.0" layoutY="365.0" />
+      <Button fx:id="changeDC" layoutX="399.0" layoutY="522.0" mnemonicParsing="false" text="Save" />
+      <PasswordField fx:id="password" layoutX="121.0" layoutY="465.0" />
+      <TextField fx:id="idUser" layoutX="121.0" layoutY="256.0" prefHeight="25.0" prefWidth="41.0" />
+   </children>
+</AnchorPane>

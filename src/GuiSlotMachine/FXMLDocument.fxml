@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="866.0" prefWidth="1065.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GuiSlotMachine.FXMLDocumentController">
+    <stylesheets>
+        <URL value="@/CSS/stylesheet.css" />
+    </stylesheets>
+   <children>
+      <GridPane fx:id="matrix" layoutX="22.0" layoutY="19.0" prefHeight="542.0" prefWidth="1019.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="imageField00" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imageField01" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+            <ImageView fx:id="imageField02" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+            <ImageView fx:id="imageField10" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+            <ImageView fx:id="imageField11" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ImageView fx:id="imageField12" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ImageView fx:id="imageField20" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+            <ImageView fx:id="imageField21" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ImageView fx:id="imageField22" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ImageView fx:id="imageField03" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+            <ImageView fx:id="imageField04" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" />
+            <ImageView fx:id="imageField13" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <ImageView fx:id="imageField14" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <ImageView fx:id="imageField23" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ImageView fx:id="imageField24" fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Text layoutX="843.0" layoutY="675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bet:" />
+      <TextField fx:id="textAmount" layoutX="843.0" layoutY="691.0" prefHeight="25.0" prefWidth="48.0" />
+      <Button fx:id="btnSpin" layoutX="843.0" layoutY="758.0" mnemonicParsing="false" text="Spin" />
+      <Text layoutX="843.0" layoutY="837.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Won for the spin: $" />
+      <Label fx:id="labelWonSpin" layoutX="962.0" layoutY="824.0" text="Label" />
+      <Text layoutX="839.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount:" />
+      <TextField fx:id="textTotal" layoutX="840.0" layoutY="611.0" />
+      <Label fx:id="labelBetWarrning" layoutX="914.0" layoutY="695.0" text="Plese make your bet!" textFill="#cd1212" />
+   </children>
+</AnchorPane>
