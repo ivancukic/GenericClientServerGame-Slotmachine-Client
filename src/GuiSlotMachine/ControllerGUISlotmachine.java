@@ -59,6 +59,7 @@ public class ControllerGUISlotmachine {
         infoAlert.showAndWait();
     }
     
+    // OVAJ GENERATOR JE SAMO ZA TEXT POLJA, ZA SLIKE JE randNumberGeneratorImage()
     public void randNumberGenerator(int i, int j) {   
         
         TextField tField = null;
